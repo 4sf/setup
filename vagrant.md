@@ -31,11 +31,14 @@ vagrant up
 ```console
 vagrant ssh
 ```
-5. 가상머신 접속 상태에서 cd /vagrant
-	- 공유폴더(Vagrantfile이 만들어진 폴더)로 접근 가능
+5. 가상머신 접속 상태에서 공유폴더 접근하기
+```console
+cd /vagrant
+```
+- 공유폴더(Vagrantfile이 만들어진 폴더)로 접근 가능
 
 6. 필수 프로그램 설치
-  - 아래의 코드를 한땀 한땀 옮겨 쓰기
+- 아래의 코드를 한땀 한땀 옮겨 쓰기
 ```console
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
@@ -46,7 +49,7 @@ sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libread
 ```
 
 7. Ruby 설치
-  - 아래의 코드를 한땀 한땀 옮겨 쓰기
+- 아래의 코드를 한땀 한땀 옮겨 쓰기
 ```console
 cd
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
