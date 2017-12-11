@@ -39,7 +39,7 @@ cd /vagrant
 
 6. 필수 프로그램 설치
 - 아래의 코드를 한땀 한땀 옮겨 쓰기
-```console
+```
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
@@ -50,7 +50,7 @@ sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libread
 
 7. Ruby 설치
 - 아래의 코드를 한땀 한땀 옮겨 쓰기
-```console
+```
 cd
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
